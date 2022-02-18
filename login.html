@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        #login{
+            
+            align-self: center;           
+            min-width: 320px;
+            border: 2px solid lightblue;
+        }
+        
+        #login #title{
+            text-align: center;
+        }
+        #login fieldset{
+            border:none;
+        }
+        #login div{
+            position: relative;
+            margin:15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #login div input:not([type=button]){
+            position: absolute;
+            right: 0px;
+
+        }
+        #btn input{
+            width: 30%;
+            color: red;
+                       
+            
+        }
+        input{
+            border: 1px solid skyblue;
+        }
+        #ms
+        {
+            height: 20px;
+            padding-top: 7px;
+        }
+        #passMessage
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <section id="login">
+        <form action="" method="post" >
+            <fieldset >
+                <legend id="title">Login Page</legend>
+                <div id="un">
+                    <label for="username">User Name</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div id="pass">
+                    <label for="password">User password</label>
+                    <input type="password" name="password" id="password" required>
+                   <div id="ms"> <p id="passMessage"></p>
+  
+                   </div>
+                </div>
+                <div id="btn">
+                    <input type="button" value="Ok" id="ok">
+                    <input type="button" value="Cancel" id="cancel">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer></footer>
+    <script src="./login.js"></script>
+</body>
+</html>

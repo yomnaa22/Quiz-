@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<style>
+		.div1 {
+			border: 1px rgb(61, 57, 57) solid;
+			background-color: rgb(233, 227, 227);
+			width: 800px;
+			height: 600px;
+			margin: auto;
+		}
+		.div2 {
+			border: 1px rgb(61, 57, 57) solid;
+			background-color: rgb(233, 227, 227);
+			color: red;
+			float: left;
+			width: 200px;
+			margin: 30px;
+			height: 50px;
+			text-align: center;
+			padding-top: 10px;
+		}
+		.div3 {
+			width: 700px;
+			height: 300px;
+			border: 1px rgb(61, 57, 57) solid;
+			
+			margin: auto;
+
+			padding: 5px 10px;
+		}
+		button {
+			float: right;
+			border: 1px rgb(61, 57, 57) solid;
+			/*background-color: rgb(94, 121, 243);*/
+			margin-right: 50px;
+			margin-top: 10px;
+			width: 150px;
+			height: 50px;
+		}
+        #result{
+            text-align: center;            
+             color: red;
+         }
+	</style>
+	<script>
+		let isSelected = false;
+		let selectedAnswer = ""
+	</script>
+	<body>
+		<div class="div1">
+			<div class="div2">Welocme : username</div>
+			<div class="div2" id="qName">Quiz name</div>
+			<div class="div2" id="timer">Timer</div>
+			<div style="clear: both"></div>
+			<div style="margin: 0px 300px">
+				<button id="startBtn">Start Quiz</button>
+			</div>
+			<div class="div3">
+				<div id="question"></div>
+				<div id="choices"></div>
+			</div>
+            <div id="q-footer">
+    			<button id="btn" style="display: none">Next</button>
+            </div>
+            <h1 id="result"></h1>
+		</div>
+		<script src="quiz.js"></script>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .div1{
+        border:1px rgb(61, 57, 57) solid;
+         background-color: rgb(233, 227, 227);
+          width: 800px;
+          height: 600px;
+          margin: auto;
+    }
+    button{
+
+        border:1px rgb(61, 57, 57) solid; 
+        background-color: rgb(233, 227, 227); 
+        color: red;
+        margin-top: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 180px;
+        height: 50px;
+        }    
+
+
+    .container{
+        margin: 40px;
+
+    }
+    .container>input{
+        height: 30px;
+        border: 0.5px rgb(29, 67, 173) solid;
+        width: 450px;
+        margin-left: 50px;
+
+    }   
+    h3{
+        text-align: center;
+    }
+
+    p{
+        color: red;
+        margin-left: 200px;
+    }
+</style>
+<body>
+    <form class="div1" id="form" action="./login.html"  onsubmit="return validateForm()">
+        <h3 >Regestration page</h3>
+
+        <div class="container">  
+            <label for="username" style="padding-right: 55px;">User name</label>
+            <input type="text" id="username">
+            <p ></p>
+        </div>      
+
+        <div class="container">  
+
+        <label for="userpass" style="padding-right: 25px;">User password</label>
+        <input type="password" id="userpass">
+        <p ></p>
+
+        </div>
+        <div class="container">  
+
+        <label for="userpass2">password confirm</label>
+        <input type="password" id="userpass2">
+        <p ></p>
+
+        </div>
+        <div class="container">  
+
+        <label for="email" style="padding-right: 100px;">Email</label>
+        <input type="email" id="email">
+        <p ></p>
+
+        </div>
+
+        <label for="gender" style="padding-right: 130px; padding-left: 50px;">Gender</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" >Male</label><br>
+
+        <input type="radio" id="female" value="female" name="gender" style="margin-left: 250px; margin-top: 20px;"> 
+        <label for="female">Female</label>
+        <p ></p>
+
+        <button type="submit">OK</button>
+        <button style="float: right;" type="reset">Cancel</button>
+</form>
+
+
+<script src="./regestration.js"></script>
+</body>
+</html>
